@@ -1,0 +1,1 @@
+# sinon-issue-1143
