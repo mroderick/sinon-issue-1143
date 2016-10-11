@@ -1,0 +1,23 @@
+{
+  "name": "app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "babel-jest": "^16.0.0",
+    "enzyme": "^2.4.1",
+    "jest": "^16.0.1",
+    "jest-react-native": "^16.0.0",
+    "react": "^15.3.2",
+    "react-addons-test-utils": "^15.3.2",
+    "react-dom": "^15.3.2",
+    "react-native": "0.34.1",
+    "sinon": "^2.0.0-pre.3"
+  },
+  "jest": {
+    "preset": "jest-react-native"
+  }
+}
