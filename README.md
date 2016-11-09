@@ -4,13 +4,13 @@
 
 ### Reproduce
 ```
-git clone git@github.com:thormartin91/sinon-issue-1143.git
+git clone git@github.com:mroderick/sinon-issue-1143.git
 cd sinon-issue-1143
 npm install
 npm test
 ```
 
-Importing [sinon](https://github.com/sinonjs/sinon): `import sinon from 'sinon'` throws:
+This causes 
 
 ```
 TypeError: Date is not a constructor
@@ -20,6 +20,3 @@ TypeError: Date is not a constructor
     at Object.<anonymous> (node_modules/react-native/Libraries/Utilities/RCTLog.js:14:19)
     at setUpConsole (node_modules/react-native/Libraries/JavaScriptAppEngine/Initialization/InitializeJavaScriptAppEngine.js:54:1)
 ```
-
-See [Component.test.js](https://github.com/thormartin91/sinon-issue-1143/blob/master/Component.test.js):
-Importing `sinon` or `AppComponent` one by one works fine, but importing them both throws the error above.
